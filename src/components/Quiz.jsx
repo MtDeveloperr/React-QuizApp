@@ -31,7 +31,7 @@ export default function Quiz() {
         <div id="quiz">
 
             <div id="question">
-                <QuestionTimer/>
+                <QuestionTimer timeout={10000} onTimeout={()=>handleSelectAnswer(null)}/>
                 <h2>
                     {QUESTIONS[activeQuestionIndex].text}
                     <ul id="answers">
